@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bojunlin.truthordare2"
+    android:versionCode="2"
+    android:versionName="Truth or Dare 2.3" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black" >
+        <activity
+            android:name="com.bojunlin.truthordare2.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bojunlin.truthordare2.Shake"
+            android:label="@string/question" >
+        </activity>
+        <activity
+            android:name="com.bojunlin.truthordare2.ShakeEventListener"
+            android:label="@string/title_activity_shake_event_listener" >
+        </activity>
+        <activity
+            android:name="com.bojunlin.truthordare2.ViewMessage"
+            android:label="@string/title_activity_view_message" >
+        </activity>
+        <activity
+            android:name="com.bojunlin.truthordare2.Question"
+            android:label="@string/title_activity_question"
+            android:parentActivityName="com.bojunlin.truthordare2.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bojunlin.truthordare2.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.bojunlin.truthordare2.Game"
+            android:label="@string/title_activity_game"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>
